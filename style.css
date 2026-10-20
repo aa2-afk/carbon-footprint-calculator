@@ -1,0 +1,140 @@
+/* Carbon Footprint Calculator - custom styles */
+:root {
+  --forest: #174b36;
+  --leaf: #2f8055;
+  --mint: #eaf4ed;
+  --ink: #24332b;
+  --muted: #5d6b62;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #f7faf7;
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-shell {
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 0 0 22px;
+}
+
+.hero-section {
+  padding-top: clamp(42px, 8vw, 96px);
+  padding-bottom: 54px;
+}
+
+.eyebrow {
+  color: var(--leaf);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+  margin-bottom: 15px;
+}
+
+h1 {
+  color: var(--forest);
+  font-size: clamp(2.3rem, 4.6vw, 4.1rem);
+  font-weight: 800;
+  letter-spacing: -.045em;
+  line-height: 1.08;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #43865c;
+  font-size: clamp(1.35rem, 2.2vw, 1.9rem);
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.intro-text {
+  color: var(--muted);
+  font-size: 1.06rem;
+  line-height: 1.85;
+  max-width: 570px;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 430px;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 18px 45px rgba(24, 65, 42, .16);
+}
+
+.action-section {
+  padding-bottom: 45px;
+}
+
+.action-card {
+  background: #fff;
+  border: 1px solid #e0ebe2;
+  border-radius: 22px;
+  box-shadow: 0 12px 35px rgba(24, 65, 42, .07);
+  padding: clamp(28px, 5vw, 52px);
+}
+
+.leaf-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--mint);
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  font-size: 1.6rem;
+  margin-bottom: 18px;
+}
+
+h4 {
+  color: var(--forest);
+  font-size: clamp(1.35rem, 2.3vw, 1.8rem);
+  font-weight: 750;
+  margin-bottom: 14px;
+}
+
+.action-card > p:not(.button-note) {
+  color: var(--muted);
+  line-height: 1.8;
+  max-width: 690px;
+  margin: 0 auto 24px;
+}
+
+.calculate-button {
+  background: #1769d2;
+  border-color: #1769d2;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 11px 30px;
+  box-shadow: 0 5px 14px rgba(23, 105, 210, .18);
+}
+
+.calculate-button:hover,
+.calculate-button:focus {
+  background: #1055ad;
+  border-color: #1055ad;
+}
+
+.button-note {
+  color: #748078;
+  font-size: .88rem;
+  line-height: 1.6;
+  margin: 20px auto 0;
+}
+
+footer {
+  color: #78867c;
+  font-size: .9rem;
+  padding-top: 8px;
+}
+
+@media (max-width: 991.98px) {
+  .hero-section { padding-top: 38px; padding-bottom: 35px; }
+  .intro-copy { order: 1; }
+  .hero-image { max-height: 330px; }
+}
